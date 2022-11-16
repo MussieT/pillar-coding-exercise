@@ -1,0 +1,10 @@
+query basic_cities($limit: Int, $offset: Int,$filter: basic_cities_bool_exp) {
+  items: basic_cities(
+    limit: $limit
+    offset: $offset
+    where: $filter
+  ) {
+    id
+    name
+  }
+}

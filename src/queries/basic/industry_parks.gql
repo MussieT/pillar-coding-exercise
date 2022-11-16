@@ -1,0 +1,10 @@
+query industry_parks($limit: Int, $offset: Int,$filter: basic_industry_parks_bool_exp) {
+  items: basic_industry_parks(
+    limit: $limit
+    offset: $offset
+    where: $filter
+  ) {
+    id
+    name
+  }
+}

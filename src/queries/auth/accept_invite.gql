@@ -1,0 +1,6 @@
+mutation accept_invite($password: String!,$it: String!) {
+  accept_invite(object:{invitation_token:$it, password:$password}){
+    name
+    avatar
+  }
+}

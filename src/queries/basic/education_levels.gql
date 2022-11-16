@@ -1,0 +1,10 @@
+query education_levels($limit: Int, $offset: Int,$filter: basic_education_levels_bool_exp) {
+  items: basic_education_levels(
+    limit: $limit
+    offset: $offset
+    where: $filter
+  ) {
+    id
+    name
+  }
+}

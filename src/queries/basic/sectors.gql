@@ -1,0 +1,6 @@
+query basic_sectors($limit: Int, $offset: Int, $filter: basic_sectors_bool_exp) {
+  items:basic_sectors(limit: $limit, offset: $offset, where:$filter) {
+    id
+    name
+  }
+}

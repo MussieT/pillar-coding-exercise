@@ -1,0 +1,14 @@
+query basic_woreda_towns(
+  $limit: Int
+  $offset: Int
+  $filter:basic_woreda_towns_bool_exp
+) {
+  items: basic_woreda_towns(
+    limit: $limit
+    offset: $offset
+    where: $filter
+  ) {
+    id
+    name
+  }
+}

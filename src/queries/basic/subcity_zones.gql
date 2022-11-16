@@ -1,0 +1,15 @@
+query basic_subcity_zones(
+  $limit: Int
+  $offset: Int
+  $filter:basic_subcity_zones_bool_exp
+) {
+  items: basic_subcity_zones(
+    limit: $limit
+    offset: $offset
+    where:$filter
+  ) {
+    id
+    name
+    region_city_id
+  }
+}

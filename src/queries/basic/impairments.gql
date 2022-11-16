@@ -1,0 +1,10 @@
+query impairments($limit: Int, $offset: Int,$filter: basic_impairments_bool_exp) {
+  items: basic_impairments(
+    limit: $limit
+    offset: $offset
+    where: $filter
+  ) {
+    id
+    name
+  }
+}

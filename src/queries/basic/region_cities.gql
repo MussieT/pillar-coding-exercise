@@ -1,0 +1,14 @@
+query basic_region_cities(
+  $limit: Int
+  $offset: Int
+  $filter:basic_region_cities_bool_exp
+) {
+  items: basic_region_cities(
+    limit: $limit
+    offset: $offset
+    where:$filter
+  ) {
+    id
+    name
+  }
+}

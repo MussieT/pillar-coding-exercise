@@ -1,0 +1,6 @@
+query token_for_entity($industry_park_entity_id: String!) {
+  token_for_entity(industry_park_entity_id: $industry_park_entity_id) {
+    access_token
+    user_id
+  }
+}

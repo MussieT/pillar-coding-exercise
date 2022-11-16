@@ -1,0 +1,11 @@
+mutation confirm_email($token: String!) {
+  confirm_email(token: $token) {
+    user {
+      id
+      name
+    }
+    token {
+      access_token
+    }
+  }
+}

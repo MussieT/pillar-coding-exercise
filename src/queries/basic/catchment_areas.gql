@@ -1,0 +1,10 @@
+query catchment_areas($limit: Int, $offset: Int,$filter: catchment_areas_bool_exp) {
+  items: catchment_areas(
+    limit: $limit
+    offset: $offset
+    where: $filter
+  ) {
+    id
+    name
+  }
+}
